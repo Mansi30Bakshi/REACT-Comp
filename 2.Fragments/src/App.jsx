@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FoodItem from "./Components/FoodItem";
 import Errormsg from "./Components/Errormsg";
 import "./App.css";
+import Container from "./Components/Container";
+
 function App() {
   let foodItems = [
     "Dal",
@@ -22,9 +24,12 @@ function App() {
   // }
   return (
     <>
-      <h1 classNameName="Heading">Healthy Foods</h1>
+    <Container>
+      <h1 className="Heading">Healthy Foods</h1>
       <Errormsg items={foodItems} />
       <FoodItem items={foodItems} />
+    </Container>
+    <Container>Above is list of good food everyone should eat everyday.</Container>
     </>
   );
 }
