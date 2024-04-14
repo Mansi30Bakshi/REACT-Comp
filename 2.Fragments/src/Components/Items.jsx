@@ -1,14 +1,10 @@
-const Items = ({ foodItemss }) => {
-  const HandleButtonClick=(event)=>{
-    console.log(event);
-    console.log(`${foodItemss} being clicked`)
-  }
+const Items = ({ foodItemss,bought,HandleButtonClick }) => {
   // let {foodItemss} = props;
   return (
-    <li className="list-group-item">
+    <li className={`list-group-item ${bought ? "active" : ""}`}>
       <span>{foodItemss}</span>
       <button className={"But btn btn-warning "}
-    onClick={(event)=> HandleButtonClick(event)}>
+    onClick={HandleButtonClick}>
     Buy
     </button>
     </li>
