@@ -1,0 +1,31 @@
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+  font-weight: 900;
+  font-size: x-large;
+  margin: 45px;
+}
+input{
+  width:100%;
+  /* margin-left: 10%; */
+}
+.items-container{
+  width:100%;
+  text-align:justify;
+  /* margin-left: 0%; */
+  /* margin-right: 25%; */
+}
+
+.Sbutton{
+  min-width: 100px;
+  margin-left:100%;
+}
+.Sbutton1{
+  min-width: 100px;
+  margin-left:1%;
+  margin-top: 5%;
+}
+.Scol{
+  margin-left: 1%;
+}
