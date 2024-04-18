@@ -6,11 +6,11 @@ import "./App.css";
 
 function App() {
   return (
-    <center classNameName="todo-Container">
+    <center className="todo-Container">
       <AppName />
       {/* <AppName/> */}
       <AddTodo />
-      <div classNameName="items-container">
+      <div className="items-container">
         <TodoItem1 />
         <TodoItem2 />
       </div>

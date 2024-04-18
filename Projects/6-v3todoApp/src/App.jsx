@@ -9,24 +9,30 @@ import Welcome from "./Components/Welcome";
 function App() {
   // const i_todoItems = [];
 
-  const [todoItem,settodoItem] = useState([]);
-  const handleNewItem = (item_name,item_duedate)=>{
-     console.log(`New item added named ${item_name} an its duedate is ${item_duedate}`);
-     const newtodoItems = [...todoItem,{name:item_name,duedate:item_duedate}];
-     settodoItem(newtodoItems);
-    };
+  const [todoItem, settodoItem] = useState([]);
+  const handleNewItem = (item_name, item_duedate) => {
+    console.log(
+      `New item added named ${item_name} an its duedate is ${item_duedate}`
+    );
+    const newtodoItems = [
+      ...todoItem,
+      { name: item_name, duedate: item_duedate },
+    ];
+    settodoItem(newtodoItems);
+  };
 
-  const HandleDeleteItem=(todoName) =>{
-    const newtodoItem = todoItem.filter(item => item.name !== todoName);
+  const HandleDeleteItem = (todoName) => {
+    const newtodoItem = todoItem.filter((item) => item.name !== todoName);
     settodoItem(newtodoItem);
-  }
+  };
   return (
-    <center classNameName="todo-Container">
+    <center className="todo-Container">
       <AppName />
       {/* <AppName/> */}
-      <AddTodo onNewitem={handleNewItem}/>
-      <Welcome todoitems={todoItem}/>
-      <TodoItems todoitems={todoItem} onDelClick={HandleDeleteItem} /> {/* Passed todoItem as a prop */}
+      <AddTodo onNewitem={handleNewItem} />
+      <Welcome todoitems={todoItem} />
+      <TodoItems todoitems={todoItem} onDelClick={HandleDeleteItem} />{" "}
+      {/* Passed todoItem as a prop */}
     </center>
   );
 }

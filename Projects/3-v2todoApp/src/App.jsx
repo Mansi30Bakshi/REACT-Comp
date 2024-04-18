@@ -15,7 +15,7 @@
 //     duedate:"5/10/23",
 // }];
 //   return (
-//     <center classNameName="todo-Container">
+//     <center className="todo-Container">
 //       <AppName/>
 //       {/* <AppName/> */}
 //       <AddTodo/>
@@ -42,16 +42,16 @@ function App() {
       duedate: "5/10/23",
     },
     {
-      name:"Dance",
-      duedate:"Now",
+      name: "Dance",
+      duedate: "Now",
     },
     {
-      name:"smile",
-      duedate:"everytime",
-    }
+      name: "smile",
+      duedate: "everytime",
+    },
   ];
   return (
-    <center classNameName="todo-Container">
+    <center className="todo-Container">
       <AppName />
       {/* <AppName/> */}
       <AddTodo />
