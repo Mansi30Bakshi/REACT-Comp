@@ -26,7 +26,7 @@ function App() {
     settodoItem(newtodoItem);
   };
   return (
-    <center className="todo-Container">
+    <center classNameNameNameName="todo-Container">
       <AppName />
       {/* <AppName/> */}
       <AddTodo onNewitem={handleNewItem} />

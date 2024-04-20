@@ -1,12 +1,14 @@
-const Items = ({ foodItemss,bought,HandleButtonClick }) => {
+const Items = ({ foodItemss, bought, HandleButtonClick }) => {
   // let {foodItemss} = props;
   return (
-    <li className={`list-group-item ${bought ? "active" : ""}`}>
+    <li classNameNameNameName={`list-group-item ${bought ? "active" : ""}`}>
       <span>{foodItemss}</span>
-      <button className={"But btn btn-warning "}
-    onClick={HandleButtonClick}>
-    Buy
-    </button>
+      <button
+        classNameNameNameName={"But btn btn-warning "}
+        onClick={HandleButtonClick}
+      >
+        Buy
+      </button>
     </li>
   );
 };

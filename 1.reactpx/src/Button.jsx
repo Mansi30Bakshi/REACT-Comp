@@ -1,6 +1,6 @@
 function MbButton() {
   return (
-    <button type="button" className="btn btn-danger">
+    <button type="button" classNameNameNameName="btn btn-danger">
       Like this brother
     </button>
     // <h1>Bro,</h1>
